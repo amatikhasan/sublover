@@ -1,0 +1,75 @@
+/* Add this to your main CSS file or within a <style> tag in your HTML */
+.navbar{
+    background-color: #343a40;
+}
+.navbar-brand {
+    padding-top: 0 !important;
+}
+footer {
+    background-color: #343a40;  /* Light gray background */
+    color: #FFF;             /* Dark gray text */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #dee2e6;
+}
+footer a{
+    color: white;
+}
+
+.card-img-top {
+    height: 320px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+    width: 100%; /* Ensures the image covers the full width of the card */
+    background-image: url('asset/placeholder.jpg'); /* // Fallback image*/
+    background-size: cover; /* // Cover the entire area*/
+    background-position: center;  /*// Center the background image*/
+}
+
+@media only screen and (max-width: 767px) {
+    .card-img-top {
+        height: auto; /* Adjust height as needed */
+    }
+}
+
+.search-results {
+    position: absolute;  /*// Keeps the results list in the same spot */
+    background-color: white;
+    width: 100%;  /*// Adjust according to your design needs */
+    max-height: 400px;  /*// Set based on the height of 5 items approximately*/
+    overflow-y: auto;  /*// Allows vertical scrolling*/
+    z-index: 1000;  /*// Ensures the dropdown is on top of other content*/
+    border: 1px solid #ccc;  /*// Adds a subtle border*/
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);  /*// Optional: Adds shadow for better visibility*/
+}
+
+.search-item {
+    display: flex;
+    align-items: center;  /*// Aligns items vertically in the center*/
+    padding: 10px 10px 10px 50px;
+    border-bottom: 1px solid #eee;  /*// Separates items visually*/
+}
+
+
+.search-item:last-child {
+    border-bottom: none;
+}
+
+.search-img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between image and text */
+}
+
+.search-link {
+    text-decoration: none; /* Removes underline */
+    color: black; /* Sets text color */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.search-link:hover {
+    color: #0056b3; /* Example hover color - blue */
+}
